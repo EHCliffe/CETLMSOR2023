@@ -33,6 +33,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-heading2-size: 1.5em;
   --r-heading3-size: 2em;
   --r-heading4-size: 1.5em;
+  --r-heading5-size: 1.25em;
   --r-code-font: monospace;
   --r-link-color: #00008B;
   --r-link-color-dark: #00003f;
@@ -105,6 +106,10 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 .reveal h4 {
   font-size: var(--r-heading4-size);
+}
+
+.reveal h5 {
+  font-size: var(--r-heading5-size);
 }
 
 .reveal h1 {
