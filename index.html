@@ -84,25 +84,25 @@
 			    
 			    <section>
 			      <h5><a href="./images/alternative/Legal-context.xlsx">Legal context</a><sup>*</sup></h5>
-			      <a href="./images/alternative/Legal-context.xlsx"><img src="./images/Legal-context.svg" width="90%" alt="Please click on image to download timeline as an Excel file."></a>
+			      <img src="./images/Legal-context.svg" width="90%" alt="Please click on slide title to download timeline as an Excel file.">
 			      <p align="right" style="font-size:50%">*I am not a lawyer. Seek advice.</p>
 			    </section>
 
 			    <section>
 			      <h5><a href="./images/alternative/Technology-context.xlsx">Technology context</a><sup>*</sup></h5>
-			      <a href="./images/alternative/Technology-context.xlsx"><img src="./images/Technology-context.svg" width="90%" alt="Please click on image to download timeline as an Excel file."></a>
+			      <img src="./images/Technology-context.svg" width="90%" alt="Please click on slide title to download timeline as an Excel file.">
 			      <p align="right" style="font-size:50%">*The development of many, many other softwares and underlying technologies are part of this story but not shown</p>
 			    </section>
 
 			    <section>
 			      <h5><a href="./images/alternative/Our-work.xlsx">Our work</a><sup>*</sup></h5>
-			      <a href="./images/alternative/Our-work.xlsx"><img src="./images/Our-work.svg" width="90%" alt="Please click on image to download timeline as an Excel file."></a>
+			      <img src="./images/Our-work.svg" width="90%" alt="Please click on slide title to download timeline as an Excel file.">
 			      <p align="right" style="font-size:50%">*Not everything is here, I am sure. I have also omitted all detail from the working groups and MSOR disabilities series.</p>
 			    </section>
 
 			    <section>
 			      <h5><a href="./images/alternative/Our-work-phases.xlsx">Phases</a><sup>*</sup></h5>
-			      <a href="./images/alternative/Our-work-phases.xlsx"><img src="./images/Our-work-phases.svg" width="90%" alt="Please click on image to download timeline as an Excel file."></a>
+			      <img src="./images/Our-work-phases.svg" width="90%" alt="Please click on slide title to download timeline as an Excel file.">
 			      <p align="right" style="font-size:50%">*Very loosely, how it felt for me...</p>
 			    </section>
 
@@ -272,7 +272,7 @@
 
 			    <section>
 			      <h4>Phases</h4>
-			      <a href="./images/alternative/Our-work-phases.xlsx"><img src="./images/Our-work-phases-future.svg" width="90%" alt="Please click on image to download timeline as an Excel file."></a>
+			      <img src="./images/Our-work-phases-future.svg" width="90%" alt="Please click on slide title to download timeline as an Excel file.">
 			    </section>
 
 			    <section>
@@ -334,20 +334,23 @@
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/math/math.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
 		<script>
 			Reveal.initialize({
-				history: true,
-				transition: 'none',
+			    history: true,
+			    transition: 'none',
 
-				mathjax2: {
-					config: 'TeX-AMS_HTML-full',
-					TeX: {
-						Macros: {
-							R: '\\mathbb{R}',
-							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
-						}
-					}
-				},
+			    mathjax2: {
+				config: 'TeX-AMS_HTML-full',
+				TeX: {
+				    Macros: {
+					R: '\\mathbb{R}',
+					set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+				    }
+				}
+			    },
+
+			    
 
 				// There are three typesetters available
 				// RevealMath.MathJax2 (default)
@@ -355,7 +358,7 @@
 				// RevealMath.KaTeX
 				//
 				// More info at https://revealjs.com/math/
-				plugins: [ RevealMath.MathJax2 ]
+			    plugins: [ RevealMath.MathJax2, RevealZoom ]
 			});
 		</script>
 
